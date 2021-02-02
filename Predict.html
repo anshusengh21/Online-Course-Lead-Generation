@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Course Lead Generation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+    </ul>
+  </div>
+</nav>
+<style>
+body  {
+  background-color: powderblue;
+}
+select,input { 
+	width:250px; 
+	border: none;
+	padding: 6px;
+}
+.btn{
+	width:500px; 
+	border: none;
+	padding: 6px;
+}
+
+div.ex2 {
+  padding: 40px;
+}
+
+label {
+	width: 240px;
+	display; inline-block;
+}
+ .prediction {
+        display: flex;
+        align-items: center; /* Use another value to see the result */
+        width: 500%;
+        height: 100px;
+      }
+
+</style>
+<div style="text-align:center">
+<h2>Prediction For the Lead Conversion</h2>
+</div>
+ <marquee> <h3> Please fill the Form: <h3> </marquee >
+<div class="ex2">
+  <form action="/" method="post">
+ 
+	<label>Lead Origin:</label>
+	<select id="lead_Origin" name="lead_Origin" required>
+	<option value="">Select... </option>
+	<option value="API">API</option>
+	<option value="Landing_Page_Submission">Landing Page Submission</option>
+	<option value="Lead_Add_Form">Lead Add Form</option>
+	<option value="Lead_Import">Lead Import</option>
+	</select>
+	</br>
+	</br>
+	<label>Lead Source:</label>
+	<select id="lead_Source" name="lead_Source" required>
+	<option value="">Select...     </option>
+	<option value="Olark_Chat">Olark Chat</option>
+	<option value="organic_Search">Organic Search</option>
+	<option value="Direct_Traffic">Direct Traffic</option>
+	<option value="Google">Google</option>
+	<option value="Referral_Site">Referral Site</option>
+	<option value="Facebook">Facebook</option>
+	<option value="Reference">Reference</option>
+	<option value="Social_Media">Social Media</option>
+	<option value="Welingak_Website">Welingak Website</option>
+	<option value="Others">Others</option>
+	</select>
+	</br>
+	</br>
+	<label for="do_Not_Email">Do Not Email:</label>
+	<select id="do_Not_Email" name="do_Not_Email" required>
+	<option value="">Select...</option>
+	<option value="Yes">Yes</option>
+	<option value="No">No</option>
+	</select>
+	</br>
+	</br>
+	<label for="TotalVisits">Total Visits:</label>
+	<input id="TotalVisits" name="TotalVisits" placeholder="Enter Numeric Value" required>
+	</br>
+	</br>
+	<label for="Total_Time_Spent_on_Website">Total_Time_Spent_on_Website:</label>
+	<input id="Total_Time_Spent_on_Website" name="Total_Time_Spent_on_Website" placeholder="Enter Numeric Value" required>
+	</br>
+	</br>
+	<label for="Page_Views_Per_Visit">Page_Views_Per_Visit:</label>
+	<input id="Page_Views_Per_Visit" name="Page_Views_Per_Visit" placeholder="Enter Numeric Value" required>
+	</br>
+	</br>
+	<label for="specialization">Specialization:</label>
+	<select id="specialization" name="specialization" required>
+	<option value="">Select...</option>
+	<option value="Business_Administration">Business Administration</option>
+	<option value="Media_and_Advertising">Media and Advertising</option>
+	<option value="Management_Specializations">Management_Specializations</option>
+	<option value="Travel_and_Tourism">Travel and Tourism</option>
+	<option value="Banking_Investment_And_Insurance">Banking, Investment And Insurance</option>
+	<option value="E_COMMERCE">E-COMMERCE</option>
+	<option value="Rural_and_Agribusiness">Rural and Agribusiness</option>
+	<option value="International_Business">International Business</option>
+	<option value="E_Business">E-Business</option>
+	<option value="Services_Excellence">Services Excellence</option>
+	<option value="Not_Specified">Not Specified</option>
+	</select>
+	</br>
+	</br>
+    	<label for="What_is_your_current_Occupation">What is your current occupation:</label>
+    	<select id="What_is_your_current_Occupation" name="What_is_your_current_Occupation" required>
+	<option value="">Select...</option>	
+    	<option value="Unemployed">Unemployed</option>
+	<option value="Student">Student</option>
+    	<option value="Working_Professional">Working Professional</option>
+    	<option value="Housewife">Housewife</option>
+	<option value="Businessman">Businessman</option>
+	<option value="Other">Other</option>
+    	</select>
+	</br>
+	</br>
+	<label for="tags">Tags:</label>
+    	<select id="tags" name="tags" required>
+	<option value="">Select...</option>
+    	<option value="Interested_in_other_courses">Interested in other courses</option>
+	<option value="Ringing">Ringing</option>
+	<option value="Busy">Busy</option>
+    	<option value="Will_revert_after_reading_the_email">Will revert after reading the email</option>
+	<option value="Lost_to_EINS">Lost to EINS</option>
+	<option value="Closed_by_Horizzon">Closed by Horizzon</option>
+	<option value="'Not_Specified">Not Specified</option>
+	<option value="Other_Tags">Other_Tags</option>
+    	</select>
+	</br>
+	</br>
+	<label>City:</label>
+    	<select id="city" name="city" required>
+	<option value="">Select...</option>
+    	<option value="Mumbai">Mumbai</option>
+	<option value="Thane_and_Outskirts">Thane & Outskirts</option>
+	<option value="Other_Metro_Cities">Other Metro Cities</option>
+    <option value="Other_Cities">Other Cities</option>
+	<option value="Other_Cities_of_Maharashtra">Other Cities of Maharashtra</option>
+	<option value="Tier_II_Cities">Tier II Cities</option>
+    </select>
+	</br>
+	</br>
+	<label>A free Copy of mastering the interviews:</label>
+	<select id="A_free_copy_of_Mastering_The_Interview" name="A_free_copy_of_Mastering_The_Interview" required>
+	<option value="">Select...</option>
+	<option value="Yes">Yes</option>
+	<option value="No">No</option>
+	</select>
+	</br>
+	</br>
+	<label for="Last_Notable_Activity">Last Notable Activity:</label>
+    	<select id="Last_Notable_Activity" name="Last_Notable_Activity" required>
+	<option value="">Select...</option>
+    	<option value="Modified">Modified</option>
+	<option value="Email_Opened">Email Opened</option>
+	<option value="Page_Visited_on_Website">Page Visited on Website</option>
+    	<option value="SMS_Sent">SMS Sent</option>
+	<option value="Email_Link_Clicked">Email Link Clicked</option>
+	<option value="Olark_Chat_Conversation">Olark Chat Conversation</option>
+	<option value="Other_Notable_Activity">Other Notable Activity</option>   
+	</select>
+	</br>
+	</br>
+	<input type="submit"  class="btn btn-success" name="submit" value="Submit"	autocomplete="off">
+	
+	</br>
+
+	
+  </form>
+  <div class="prediction">
+  <h1>{{ prediction_text }}</h1>
+  </div>
+</div>
+</body>
+</html>
